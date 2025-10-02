@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ultrafit</title>
+  <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/aos.css">
+  <link rel="stylesheet" type="text/css" href="./css/font.css">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">  
+</head>
+
+<body>
+  <section class="ready-content01 full-vh">
+    <div class="fade-seq relative" id="imgSeq">
+      <img src="images/ready/01.png" class="img-responsive center-block" usemap="#ready" />
+      <map name="ready">
+        <area target="_self" alt="ready" title="ready" href="meet.html" coords="208,1104,876,1290" shape="rect">
+        <area target="_self" alt="ready" title="ready" href="index.html" coords="203,1345,879,1527" shape="rect">
+      </map>
+      <img src="images/ready/02.png" class="img-responsive center-block" />
+      <img src="images/ready/03.png" class="img-responsive center-block" />
+      <img src="images/ready/04.png" class="img-responsive center-block" />
+      <img src="images/ready/05.png" class="img-responsive center-block" />
+      <img src="images/ready/06.png" class="img-responsive center-block" />
+      <img src="images/ready/07.png" class="img-responsive center-block" />
+      <img src="images/ready/08.png" class="img-responsive center-block" />
+      <img src="images/ready/09.png" class="img-responsive center-block" />
+    </div>
+  </section>
+  
+  <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./js/aos.js"></script>
+  <script type="text/javascript" src="./js/jquery.rwdImageMaps.min.js"></script>  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('imgSeq');
+  const slides = Array.from(container.querySelectorAll('img'));
+  const N = slides.length;
+
+  // 옵션
+  const fadeMs     = 1000;   // 페이드 시간
+  const firstHold  = 40000;  // 1번 노출
+  const otherHold  = 7000;   // 2~8번 노출
+
+  function setBaseZ() {
+    slides.forEach((img, i) => {
+      img.style.zIndex = String(N - i);
+      img.style.transition = `opacity ${fadeMs}ms ease`;
+      img.style.removeProperty('opacity'); // ★ 인라인 opacity 싹 제거
+      img.classList.remove('is-out');      // 기본은 보이는 상태
+    });
+  }
+  setBaseZ();
+
+  function run(index = 0) {
+    const cur = slides[index];
+    const isLast = index === N - 1;
+    const hold = (index === 0) ? firstHold : otherHold;
+
+    setTimeout(() => {
+      if (isLast) {
+        // 마지막(8) -> 처음(1) 교차페이드 준비
+        const first = slides[0];
+
+        // 8을 맨 위, 1을 그 바로 아래로
+        cur.style.zIndex   = '1002';
+        first.style.zIndex = '1001';
+
+        // 현재(8) 제외 전부 '보임'으로 초기화 (인라인 opacity 제거가 핵심)
+        slides.forEach(img => {
+          if (img !== cur) {
+            img.style.transition = 'none';
+            img.classList.remove('is-out');
+            img.style.removeProperty('opacity'); // ★ 여기!
+          }
+        });
+        void container.offsetWidth; // reflow
+        slides.forEach(img => {
+          if (img !== cur) img.style.transition = `opacity ${fadeMs}ms ease`;
+        });
+      }
+
+      // 현재 이미지 페이드아웃
+      cur.classList.add('is-out');
+
+      // 페이드 끝난 뒤 다음으로
+      setTimeout(() => {
+        if (isLast) {
+          setBaseZ(); // 다음 사이클을 위해 정리
+        }
+        run((index + 1) % N); // 무한 반복
+      }, fadeMs + 20);
+    }, hold);
+  }
+
+  run(0);
+});
+</script>
+
+</body>
+</html>

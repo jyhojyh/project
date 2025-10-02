@@ -1,0 +1,121 @@
+@media screen and (max-width:1499px){
+ .circle .circle_wrap .fig { width: 50vw; height: 50vw } 
+.ingredient-slide .text-wrap h3 { font-size: 24px } 
+.ingredient-slide .swiper-slide-active .text-wrap p { font-size: 14px } 
+
+.footer ul li:nth-child(3) { padding-right: 0; } 
+.footer ul li div:first-child { padding-right: 0; } 
+ }
+
+@media screen and (max-width:1199px){
+ .footer ul li div:first-child { padding-right: 50px } 
+.footer ul li a { font-size: 22px } 
+.footer p { font-size: 14px } 
+.navi-menu { top:calc(100% - 100px); width:calc(100% - 50px); height: auto; justify-content: center; } 
+.swiper .wrap { top:13%; height: 87% } 
+.swiper-button-prev,.swiper-button-next { top:calc(50% + 6.5%) } 
+.ingredient-slide .text-wrap { padding-left: 50px; padding-right: 50px }
+.ingredient-slide .swiper-slide .center { top:0; right:0; left:0; max-width: 100%; text-align: left } 
+.ingredient-slide .text-wrap.white * { color:#000 } 
+.how-to .box > div { width: 100%; padding:50px 30px } 
+ }
+
+@media screen and (max-width:991px) { 
+header { padding-top: 25px; padding-left: 25px; padding-right: 25px }
+header ul li a.menu1 svg{max-width: 80px;}
+header ul li a { font-size: 16px } 
+footer .footer { min-height: 450px } 
+.footer .top-btn img { width:70px } 
+.footer ul { flex-wrap: wrap; } 
+.footer ul li { width: 100% } 
+.footer ul li { margin-top: 50px } 
+.footer ul li:first-child { margin-top: 0; } 
+.footer ul li:nth-child(1) span { text-align: left; } 
+.footer ul li p span { display: block; padding-bottom: 10px; } 
+#fp-nav { top: 80px; transform: translate3d(0, 0, 0); } 
+#fp-nav.fp-left { display: none; } 
+#fp-nav ul li { position: absolute } 
+#fp-nav ul li a { display: none } 
+#fp-nav ul li a.active { display: block } 
+.circle { top:40%; height: 60% } 
+.circle .circle_wrap .fig { width: 34vw; height: 34vw } 
+.center_wrap { align-items: start; padding-top: 120px } 
+.text_wrap p { font-size: 12px } 
+.fp-viewing-1 .about_bg.bg01 div:after { content:""; display: block; position: absolute; top:0; left:0; width: 100%; height: 100%; background-color: rgba(255,255,255,.5) } 
+.about_bg.bg02 div { background-image:url(../images/main/bg02_mo.jpg) } 
+.section03 ul li h3,.section03 ul li p { color:#fff } 
+.section03 ul li { border-color:#fff } 
+.product .bg { height: 600px } 
+.product-list { padding-bottom: 0;padding-left: 0; padding-right: 0 } 
+.product-list li { width: 50% } 
+.prd-top { flex-wrap: wrap; padding-left: 0 } 
+.prd-top .img { width: 100% } 
+.prd-top .img img { max-width: 200px } 
+.prd-top .desc,.prd-top .desc > div { width: 100% } 
+.navi-menu { left:25px; width: calc(100% - 50px) } 
+.swiper .wrap .img-box { width: 60vw; height: 60vw } 
+.ingredient-slide .text-wrap { padding-left: 25px; padding-right: 25px } 
+.swiper-button-prev { left: 25px } 
+.swiper-button-next { right:25px } 
+.progressbar { padding:0 25px } 
+.progressbar:after { width: calc(100% - 50px) } 
+.how-to { flex-wrap: wrap; } 
+.how-to .howimg,.how-to .box { width: 100% } 
+.how-to .box > div { max-width: 100%; padding-left: 0; padding-right: 0 } 
+.prd-top .desc h3 { font-size: 24px } 
+.prd-top .desc h4 { font-size: 16px } 
+.prd-top .desc p { font-size: 16px }
+.ingredient-slide .swiper-slide .right{top:0;right:0;margin-top: 50px;text-align: left;}
+.mobile-bg{position: absolute;top:0;left:0;width:100%;height:100%;background-repeat:no-repeat;background-image:url(../images/cosmetics/content02.png);background-position: center center;background-size: cover;}
+.swiper .wrap .img-box{display: none;}
+ }
+
+@media screen and (max-width:767px) { header ul li { width: 120px } 
+.product svg { max-width: 100%; padding-left: 30px; padding-right: 30px } 
+.footer .top-btn { top:50px; right:15px } 
+.footer .top-btn img { width: 50px } 
+.footer { padding:50px 15px } 
+.footer ul li div { width: 100% } 
+.footer ul li div:first-child { margin-bottom: 30px; padding-right: 0 } 
+.circle { top:50%; height: 50% } 
+.center_wrap { padding-top: 150px } 
+.text_wrap h3 span { font-size: 14px } 
+/* .text_wrap p span { font-size: 12px }  */
+.section02 .right_wrap { align-items: start; padding-top: 120px } 
+.section02 .right_wrap > div { width:100%; padding-right: 25px; padding-left: 25px } 
+.section02 ul li .left { width: 120px; margin-right: 20px; font-size: 14px } 
+.section02 ul li .right { width: calc(100% - 140px); font-size: 12px } 
+.section03 .center_wrap > div { width: 100%; padding-left: 25px; padding-right: 25px } 
+.section03 ul { flex-wrap: wrap; } 
+.section03 ul li { width: 100%; margin-right: 0 } 
+.section03 ul li:last-child { margin-top: 10px } 
+.section03 ul li h3 { font-size: 16px } 
+.section03 ul li p { font-size: 11px; line-height: 1.4 } 
+.product-view { padding-top: 150px } 
+.prd-top { flex-wrap: wrap; } 
+.prd-top .img { width: 100% } 
+.prd-top .img img { max-width: 200px } 
+.prd-top .desc { width: 100%; margin-top: 30px } 
+.how-to { padding:50px 15px; } 
+.product-list li a { max-width: 100% } 
+.product-list li a img { max-width: 150px } 
+.ingredient-slide .text-wrap h3 { font-size: 18px } 
+.ingredient-slide .swiper-slide-active .text-wrap p { font-size: 11px } 
+ }
+
+@media screen and (max-width:640px) { header { padding-left: 15px; padding-right: 15px } 
+header ul li a.menu1 svg{max-width: 60px;}
+header ul { display: block; text-align: center; font-size: 0 } 
+/*header ul li { display:inline-block; width: 33.33333%; text-align: center; } */
+header ul li { display:inline-block; width: 25%; text-align: center; vertical-align: middle;} 
+header ul li a { font-size: 14px } 
+header ul li:last-child { margin-right: 0 } 
+.footer ul li a { font-size: 18px } 
+.footer p { font-size: 14px } 
+.product .bg { height: 400px } 
+.progressbar span:after { left:50%; transform: translateX(-50%); } 
+ }
+
+@media screen and (max-width:540px) { } 
+
+@media screen and (max-width:480px) { } 

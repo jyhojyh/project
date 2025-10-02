@@ -1,0 +1,92 @@
+<?php
+$cate_name = "gallery";
+$banner_text = "Construction Gallery";
+$banner_title = "Project References";
+include_once("header.php");
+include_once("banner.php");
+?>
+
+<section class="gallery01-content01 pt90 mb100 sm-pt100 sm-mb100 xs-pt100 xs-mb100">
+  <div class="container">
+    <h2 class="f40 fw7 text-center">Snow Melting</h2>
+    <div class="line mt40 center-block"></div>
+    <ul class="flex flex-wrap mt60">
+      <li>
+        <a href="gallery01_view.php" class="block">
+          <img src="../images/gallery/content01.jpg" alt="" class="img-responsive center-block" />
+          <p class="mt20 f20 fw5">현대캐피탈 본관</p>
+        </a>
+      </li>
+      <li>
+        <a href="gallery01_view.php" class="block">
+          <img src="../images/gallery/content01.jpg" alt="" class="img-responsive center-block" />
+          <p class="mt20 f20 fw5">현대캐피탈 본관</p>
+        </a>
+      </li>
+      <li>
+        <a href="gallery01_view.php" class="block">
+          <img src="../images/gallery/content01.jpg" alt="" class="img-responsive center-block" />
+          <p class="mt20 f20 fw5">현대캐피탈 본관</p>
+        </a>
+      </li>
+      <li>
+        <a href="gallery01_view.php" class="block">
+          <img src="../images/gallery/content01.jpg" alt="" class="img-responsive center-block" />
+          <p class="mt20 f20 fw5">현대캐피탈 본관</p>
+        </a>
+      </li>
+      <li>
+        <a href="gallery01_view.php" class="block">
+          <img src="../images/gallery/content01.jpg" alt="" class="img-responsive center-block" />
+          <p class="mt20 f20 fw5">현대캐피탈 본관</p>
+        </a>
+      </li>
+    </ul>
+    <div class="paging mt60 text-center f0">
+      <a href="#" class="mr25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11.553" height="11.248" viewBox="0 0 11.553 11.248">
+          <g data-name="그룹 11600">
+            <path data-name="패스 24491" d="m-11437.908 15089.776-5.27 5.27 5.27 5.271"
+              transform="translate(11449.107 -15089.422)" style="fill:none;stroke:#9c9c9c" />
+            <path data-name="패스 24492" d="m-11437.908 15089.776-5.27 5.27 5.27 5.271"
+              transform="translate(11443.885 -15089.422)" style="fill:none;stroke:#9c9c9c" />
+          </g>
+        </svg>
+      </a>
+      <a href="#" class="mr25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="6.33" height="11.248" viewBox="0 0 6.33 11.248">
+          <path data-name="패스 24490" d="m-11437.908 15089.776-5.27 5.27 5.27 5.271"
+            transform="translate(11443.885 -15089.423)" style="fill:none;stroke:#9c9c9c" />
+        </svg>
+      </a>
+      <a href="#" class="num on">1</a>
+      <a href="#" class="num">2</a>
+      <a href="#" class="num">3</a>
+      <a href="#" class="num">4</a>
+      <a href="#" class="num">5</a>
+      <a href="#" class="ml25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="6.33" height="11.249" viewBox="0 0 6.33 11.249">
+          <path data-name="패스 24495" d="m-11443.178 15089.776 5.27 5.271-5.27 5.271"
+            transform="translate(11443.531 -15089.423)" style="fill:none;stroke:#000" />
+        </svg>
+      </a>
+      <a href="#" class="ml25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11.553" height="11.249" viewBox="0 0 11.553 11.249">
+          <g data-name="그룹 11613">
+            <path data-name="패스 24491" d="m-11443.178 15089.776 5.27 5.271-5.27 5.271"
+              transform="translate(11443.532 -15089.422)" style="fill:none;stroke:#000" />
+            <path data-name="패스 24492" d="m-11443.178 15089.776 5.27 5.271-5.27 5.271"
+              transform="translate(11448.754 -15089.422)" style="fill:none;stroke:#000" />
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>  
+</section>
+
+<?php
+include_once("footer.php");
+?>
+</body>
+
+</html>
