@@ -1,7 +1,8 @@
 /* common */
-* { font-family: "Pretendard Variable",sans-serif } 
+body{max-width: 1920px;margin-left: auto;margin-right: auto;}
+* { font-family: "NanumSquareNeoVariable",sans-serif }
 .container { width: 1500px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; font-size: 0; } 
-.rift { font-family: "rift",sans-serif; } 
+.mont{font-family: "Montserrat",sans-serif;}
 :root { --main : #ee771b; } 
 select::-ms-expand {display: none; } 
 select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; } 
@@ -14,3 +15,28 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 /* banner.php */
 .banner ul li:after{content:"";display: block;position: absolute;top:50%;right:0;width:5px;height:5px;margin-top: -2.5px;background-color: #a2a2a2;border-radius: 50%;}
 .banner ul li:last-child:after{height: 0;}
+
+/* product.php */
+.swiper{overflow-x: hidden;}
+.product-slide .swiper .wrap{z-index: 1;;bottom: 50px;}
+.product-slide .swiper .wrap .pagination{width: auto;}
+.product-slide .swiper-pagination-bullet{margin-right: 8px;opacity: .5;background-color: #fff;}
+.product-slide .swiper-pagination-bullet:last-child{margin-right: 0;}
+.product-slide .swiper-pagination-bullet-active{opacity: 1;}
+.considerations h5,.considerations p{color:#3c3c3c}
+.considerations span{width: 25px;}
+.considerations h5{width: 500px;}
+.considerations p{width: calc(100% - 525px);}
+.considerations ul li{border-bottom: solid 1px #cfcfcf;}
+.considerations ul li:first-child{border-top: solid 1px #cfcfcf;}
+.keywords h5,.keywords p{color:#3c3c3c}
+.keywords ul li{background-color: #f1f3e8;}
+.keywords ul li .wrap:first-child{padding-left: 215px;padding-right: 115px;}
+.keywords ul li:nth-child(even){background-color: #fef9f3;}
+.keywords ul li:nth-child(even) .wrap:first-child{order:2;padding-left: 80px;padding-right: 250px;}
+.implementation .swiper-pagination-bullet{width: 25px;height:3px;background-color: #e2e2e2;border-radius: 0;opacity: 1;}
+.implementation .swiper-pagination-bullet-active{background-color: #96b416;}
+.product-list ul li{margin-bottom: 30px;border-radius: 10px;border: solid 1px #ccc;}
+.product-list dl *{display: inline-block;vertical-align: middle;}
+.product-list dl dt{width: 90px;}
+.product-list dl dd{width: calc(100% - 90px);}

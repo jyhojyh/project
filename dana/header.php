@@ -9,7 +9,7 @@
 
   <title>DANA</title>
   
-  <link rel="stylesheet" type="text/css" href="https://cdn.indeep.co.kr/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.indeep.co.kr/css/swiper_old.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.indeep.co.kr/css/aos.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.indeep.co.kr/css/font.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.indeep.co.kr/css/common.css">

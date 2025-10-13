@@ -11,8 +11,8 @@
         </svg>
       </li>
       <li class="relative mr30 pr30 f14 white"><?php echo $cate_name_kr; ?></li>
-      <li class="relative mr30 pr30 f14 white">도서관</li>
-      <li class="relative f14 white">일반열람실</li>      
+      <li class="relative mr30 pr30 f14 white"><?php echo $sub_cate01; ?></li>
+      <li class="relative f14 white"><?php echo $sub_cate02; ?></li>
     </ul>
   </div>
 </section>
