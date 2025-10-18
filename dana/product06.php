@@ -185,27 +185,63 @@ include_once("banner.php");
     <ul class="flex flex-wrap mt60">
       <li class="p30">
         <img src="images/product/prd06_01.png" alt="" class="img-responsive center-block" />
-        <h5 class="mt20 mb10 f15 fw7">서가/복식/6단1연</h5>
-        <dl class="f0">
-          <dt>모델명</dt>
-          <dd class="fw3">BC-726</dd>
-        </dl>
-        <dl class="f0">
-          <dt>제품사이즈</dt>
-          <dd class="fw3">W800 x D500 x H2380</dd>
-        </dl>
+        <h5 class="mt20 f15 fw7 text-center">붙박이장</h5>
+        <div class="btn-box mt30 text-center">
+          <a href="#" class="f0">
+            <span class="inline-block align-middle"></span>
+            <strong class="inline-block pl10 align-middle f18">더보기</strong>
+          </a>
+        </div>
       </li>
       <li class="p30">
         <img src="images/product/prd06_02.png" alt="" class="img-responsive center-block" />
-        <h5 class="mt20 mb10 f15 fw7">의자/초저등용</h5>
-        <dl class="f0">
-          <dt>모델명</dt>
-          <dd class="fw3">UG-5</dd>
-        </dl>
-        <dl class="f0">
-          <dt>제품사이즈</dt>
-          <dd class="fw3">W360 x D380 x H660</dd>
-        </dl>
+        <h5 class="mt20 f15 fw7 text-center">유아용교구장</h5>
+        <div class="btn-box mt30 text-center">
+          <a href="#" class="f0">
+            <span class="inline-block align-middle"></span>
+            <strong class="inline-block pl10 align-middle f18">더보기</strong>
+          </a>
+        </div>
+      </li>
+      <li class="p30">
+        <img src="images/product/prd06_03.png" alt="" class="img-responsive center-block" />
+        <h5 class="mt20 f15 fw7 text-center">유아용 탁자</h5>
+        <div class="btn-box mt30 text-center">
+          <a href="#" class="f0">
+            <span class="inline-block align-middle"></span>
+            <strong class="inline-block pl10 align-middle f18">더보기</strong>
+          </a>
+        </div>
+      </li>
+      <li class="p30">
+        <img src="images/product/prd06_04.png" alt="" class="img-responsive center-block" />
+        <h5 class="mt20 f15 fw7 text-center">작업용의자</h5>
+        <div class="btn-box mt30 text-center">
+          <a href="#" class="f0">
+            <span class="inline-block align-middle"></span>
+            <strong class="inline-block pl10 align-middle f18">더보기</strong>
+          </a>
+        </div>
+      </li>
+      <li class="p30">
+        <img src="images/product/prd06_05.png" alt="" class="img-responsive center-block" />
+        <h5 class="mt20 f15 fw7 text-center">잡지꽂이</h5>
+        <div class="btn-box mt30 text-center">
+          <a href="#" class="f0">
+            <span class="inline-block align-middle"></span>
+            <strong class="inline-block pl10 align-middle f18">더보기</strong>
+          </a>
+        </div>
+      </li>
+      <li class="p30">
+        <img src="images/product/prd06_06.png" alt="" class="img-responsive center-block" />
+        <h5 class="mt20 f15 fw7 text-center">교육용놀이세트</h5>
+        <div class="btn-box mt30 text-center">
+          <a href="#" class="f0">
+            <span class="inline-block align-middle"></span>
+            <strong class="inline-block pl10 align-middle f18">더보기</strong>
+          </a>
+        </div>
       </li>
     </ul>
   </div>
