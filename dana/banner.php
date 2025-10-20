@@ -1,6 +1,6 @@
 <section class="banner pt150 pb70 bg-common" style="background-image:url(images/banner/<?php echo $cate_name ;?>.jpg)">
   <div class="container">
-    <h3 class="f60 fw5 mont line2 capital white"><?php echo $cate_name; ?></h3>
+    <h3 class="f60 fw5 upper line2 mont white"><?php echo $cate_name; ?></h3>
     <h4 class="mt20 f26 white line0"><?php echo $cate_name_kr; ?></h4>
     <ul class="flex items-center mt40">
       <li class="relative mr30 pr30">
@@ -12,7 +12,9 @@
       </li>
       <li class="relative mr30 pr30 f14 white"><?php echo $cate_name_kr; ?></li>
       <li class="relative mr30 pr30 f14 white"><?php echo $sub_cate01; ?></li>
-      <li class="relative f14 white"><?php echo $sub_cate02; ?></li>
+      <?php if($cate_name == "product") { ?>
+        <li class="relative f14 white"><?php echo $sub_cate02; ?></li>
+      <?php } ?>
     </ul>
   </div>
 </section>
